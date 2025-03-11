@@ -157,6 +157,16 @@ set(SAMPLES_SRC_FILES
 	${SAMPLES_ROOT}/Tests/General/ActivateDuringUpdateTest.h
 	${SAMPLES_ROOT}/Tests/Rig/CreateRigTest.cpp
 	${SAMPLES_ROOT}/Tests/Rig/CreateRigTest.h
+    ${SAMPLES_ROOT}/Tests/Rocket/MissileController.cpp
+    ${SAMPLES_ROOT}/Tests/Rocket/MissileController.h
+	${SAMPLES_ROOT}/Tests/Rocket/RocketController.cpp
+	${SAMPLES_ROOT}/Tests/Rocket/RocketController.h
+    ${SAMPLES_ROOT}/Tests/Rocket/RocketShapeUtil.cpp
+    ${SAMPLES_ROOT}/Tests/Rocket/RocketShapeUtil.h
+	${SAMPLES_ROOT}/Tests/Rocket/RocketTest.cpp
+	${SAMPLES_ROOT}/Tests/Rocket/RocketTest.h
+    ${SAMPLES_ROOT}/Tests/Rocket/SceneLoader.cpp
+    ${SAMPLES_ROOT}/Tests/Rocket/SceneLoader.h
 	${SAMPLES_ROOT}/Tests/SoftBody/SoftBodyBendConstraintTest.cpp
 	${SAMPLES_ROOT}/Tests/SoftBody/SoftBodyBendConstraintTest.h
 	${SAMPLES_ROOT}/Tests/SoftBody/SoftBodyContactListenerTest.cpp

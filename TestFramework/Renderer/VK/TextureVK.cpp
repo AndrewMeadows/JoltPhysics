@@ -19,7 +19,7 @@ TextureVK::TextureVK(RendererVK *inRenderer, const Surface *inSurface) :
 	{
 	case ESurfaceFormat::A4L4:			vk_format = VK_FORMAT_R8G8_UNORM;				format = ESurfaceFormat::A8L8; break;
 	case ESurfaceFormat::L8:			vk_format = VK_FORMAT_R8_UNORM;					break;
-	case ESurfaceFormat::A8:			vk_format = VK_FORMAT_A8_UNORM_KHR;				break;
+	//case ESurfaceFormat::A8:			vk_format = VK_FORMAT_A8_UNORM_KHR;				break;
 	case ESurfaceFormat::A8L8:			vk_format = VK_FORMAT_R8G8_UNORM;				break;
 	case ESurfaceFormat::R5G6B5:		vk_format = VK_FORMAT_B5G6R5_UNORM_PACK16;		break;
 	case ESurfaceFormat::X1R5G5B5:		vk_format = VK_FORMAT_B5G5R5A1_UNORM_PACK16;	format = ESurfaceFormat::A1R5G5B5; break;

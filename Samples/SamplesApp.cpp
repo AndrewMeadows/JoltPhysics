@@ -346,6 +346,13 @@ static TestNameAndRTTI sVehicleTests[] =
 	{ "Vehicle Stress Test",				JPH_RTTI(VehicleStressTest) },
 };
 
+JPH_DECLARE_RTTI_FOR_FACTORY(JPH_NO_EXPORT, RocketTest)
+
+static TestNameAndRTTI sRocketTests[] =
+{
+	{ "Rocket Controller",					JPH_RTTI(RocketTest) }
+};
+
 JPH_DECLARE_RTTI_FOR_FACTORY(JPH_NO_EXPORT, SoftBodyShapesTest)
 JPH_DECLARE_RTTI_FOR_FACTORY(JPH_NO_EXPORT, SoftBodyFrictionTest)
 JPH_DECLARE_RTTI_FOR_FACTORY(JPH_NO_EXPORT, SoftBodyRestitutionTest)
@@ -430,6 +437,7 @@ static TestCategory sAllCategories[] =
 	{ "Character", sCharacterTests, size(sCharacterTests) },
 	{ "Water", sWaterTests, size(sWaterTests) },
 	{ "Vehicle", sVehicleTests, size(sVehicleTests) },
+	{ "Rocket", sRocketTests, size(sRocketTests) },
 	{ "Soft Body", sSoftBodyTests, size(sSoftBodyTests) },
 	{ "Broad Phase", sBroadPhaseTests, size(sBroadPhaseTests) },
 	{ "Convex Collision", sConvexCollisionTests, size(sConvexCollisionTests) },
@@ -665,7 +673,8 @@ SamplesApp::SamplesApp(const String &inCommandLine) :
 	else
 	{
 		// Otherwise start default test
-		StartTest(JPH_RTTI(CreateRigTest));
+		//StartTest(JPH_RTTI(CreateRigTest));
+		StartTest(JPH_RTTI(RocketTest));
 	}
 }
 
